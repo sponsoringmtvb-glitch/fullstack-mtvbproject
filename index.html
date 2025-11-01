@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" id="favicon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouloudia Tiznit Volleyball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              // Light Mode: Rich Green & Off-White
+              'brand-green': '#16a34a', // A richer, more vibrant green
+              'brand-green-dark': '#15803d', // A deeper shade for headers/contrast
+              'brand-light': '#f8fafc', // A soft, off-white (slate-50)
+              'brand-accent-light': '#22c55e', // A bright green for accents
+              'brand-dark-text': '#1f2937', // A dark slate for text (slate-800)
+
+              // Dark Mode: Deep Slate & Amber
+              'brand-dark': '#0f172a', // A deep, dark slate (slate-900)
+              'brand-dark-secondary': '#1e293b', // A slightly lighter slate (slate-800)
+              'brand-gold': '#f59e0b', // A warm, vibrant amber (amber-500)
+              'brand-light-text': '#d1d5db', // A light gray for text (gray-300)
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react-icons/": "https://aistudiocdn.com/react-icons@^5.2.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.3.19",
+    "classnames": "https://aistudiocdn.com/classnames@^2.5.1",
+    "react-icons": "https://aistudiocdn.com/react-icons@^5.5.0",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.78.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-light dark:bg-brand-dark font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
